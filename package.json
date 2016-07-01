@@ -1,0 +1,36 @@
+{
+  "name": "sofe-css-builder",
+  "version": "1.0.0",
+  "description": "Build CSS services for sofe. Specifically supports CSS Modules.",
+  "main": "lib/builder.js",
+	"bin": "lib/cli.js",
+  "scripts": {
+    "build": "babel src -d lib",
+		"prepublish": "npm run clean && npm run build",
+		"clean": "rm -rf lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanopyTax/sofe-css-builder.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CanopyTax/sofe-css-builder/issues"
+  },
+  "homepage": "https://github.com/CanopyTax/sofe-css-builder#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cssnano": "^3.7.1",
+    "minimist": "^1.2.0",
+    "postcss": "^5.0.21",
+    "postcss-modules": "^0.5.0"
+  },
+	"files": ["lib"]
+}
