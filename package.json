@@ -1,13 +1,13 @@
 {
   "name": "sofe-css-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build CSS services for sofe. Specifically supports CSS Modules.",
   "main": "lib/builder.js",
-	"bin": "lib/cli.js",
+  "bin": "lib/cli.js",
   "scripts": {
     "build": "babel src -d lib",
-		"prepublish": "npm run clean && npm run build",
-		"clean": "rm -rf lib",
+    "prepublish": "npm run clean && npm run build",
+    "clean": "rm -rf lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,5 +32,7 @@
     "postcss": "^5.0.21",
     "postcss-modules": "^0.5.0"
   },
-	"files": ["lib"]
+  "files": [
+    "lib"
+  ]
 }
